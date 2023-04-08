@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0B578529E10DF100132E4B /* Hobbitonbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C0B578429E10DF100132E4B /* Hobbitonbrush.ttf */; };
+		2C0B578729E10EC000132E4B /* KudosKaps2NF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C0B578629E10EC000132E4B /* KudosKaps2NF.otf */; };
 		2C8B455729DFCFBC007B19A1 /* ExchangeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8B455629DFCFBC007B19A1 /* ExchangeInfo.swift */; };
-		2C8B455929DFD3BC007B19A1 /* Hobbitonbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8B455829DFD3BC007B19A1 /* Hobbitonbrush.ttf */; };
 		2CFEFD9129DE57A8001CA467 /* LOTR_ConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEFD9029DE57A8001CA467 /* LOTR_ConverterApp.swift */; };
 		2CFEFD9329DE57A8001CA467 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFEFD9229DE57A8001CA467 /* ContentView.swift */; };
 		2CFEFD9529DE57AB001CA467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFEFD9429DE57AB001CA467 /* Assets.xcassets */; };
@@ -16,8 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0B578429E10DF100132E4B /* Hobbitonbrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Hobbitonbrush.ttf; path = "LOTR Converter/Hobbitonbrush.ttf"; sourceTree = SOURCE_ROOT; };
+		2C0B578629E10EC000132E4B /* KudosKaps2NF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = KudosKaps2NF.otf; path = ../../../../../../../../../Library/Fonts/KudosKaps2NF.otf; sourceTree = "<group>"; };
 		2C8B455629DFCFBC007B19A1 /* ExchangeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeInfo.swift; sourceTree = "<group>"; };
-		2C8B455829DFD3BC007B19A1 /* Hobbitonbrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Hobbitonbrush.ttf; path = "LOTR Converter/Hobbitonbrush.ttf"; sourceTree = SOURCE_ROOT; };
 		2C8B455A29DFD4A8007B19A1 /* LOTR-Converter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "LOTR-Converter-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2CFEFD8D29DE57A8001CA467 /* LOTR Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LOTR Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFEFD9029DE57A8001CA467 /* LOTR_ConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTR_ConverterApp.swift; sourceTree = "<group>"; };
@@ -61,7 +63,6 @@
 				2CFEFD9229DE57A8001CA467 /* ContentView.swift */,
 				2C8B455629DFCFBC007B19A1 /* ExchangeInfo.swift */,
 				2CFEFD9429DE57AB001CA467 /* Assets.xcassets */,
-				2C8B455829DFD3BC007B19A1 /* Hobbitonbrush.ttf */,
 				2CFEFD9629DE57AB001CA467 /* Preview Content */,
 			);
 			path = "LOTR Converter";
@@ -70,7 +71,9 @@
 		2CFEFD9629DE57AB001CA467 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				2C0B578429E10DF100132E4B /* Hobbitonbrush.ttf */,
 				2CFEFD9729DE57AB001CA467 /* Preview Assets.xcassets */,
+				2C0B578629E10EC000132E4B /* KudosKaps2NF.otf */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -133,8 +136,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C8B455929DFD3BC007B19A1 /* Hobbitonbrush.ttf in Resources */,
+				2C0B578529E10DF100132E4B /* Hobbitonbrush.ttf in Resources */,
 				2CFEFD9829DE57AB001CA467 /* Preview Assets.xcassets in Resources */,
+				2C0B578729E10EC000132E4B /* KudosKaps2NF.otf in Resources */,
 				2CFEFD9529DE57AB001CA467 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

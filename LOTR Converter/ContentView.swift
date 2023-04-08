@@ -26,8 +26,13 @@ struct ContentView: View {
                     .scaledToFit()
                     .frame(height: 200)
                 // currency exchange text
+                
+                
                 Text("Currency Exchange")
-                    .font(Font.custom("Hobbitonbrush", size: 30))
+                    .font(Font.custom("Hobbitonbrush", size: 40))
+                    .foregroundColor(Color(uiColor: .systemGray6))
+                    .padding(-20)
+                    
                 // currency conversion section
                 
                 HStack {
@@ -45,14 +50,17 @@ struct ContentView: View {
                                 .frame(height: 33)
                             
                             
+                            
     
                             
                             // currency text
                             
                             Text("Silver Piece")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
+                                .font(Font.custom("Hobbitonbrush", size: 20))
+                                .foregroundColor(Color(uiColor: .systemGray6))
+                                .padding(.bottom, -6)
+                                
+                                
                             
                             Spacer()
                         }
@@ -64,6 +72,7 @@ struct ContentView: View {
                             .padding(7)
                             .background(Color(uiColor: .systemGray6))
                             .cornerRadius(7)
+                            .font(Font.custom("Hobbitonbrush", size: 10))
                         
                     }
                     
@@ -84,8 +93,9 @@ struct ContentView: View {
                             Spacer()
                             
                             Text("Gold Piece")
-                                .font(.headline)
-                                .foregroundColor(.white)
+                                .font(Font.custom("Hobbitonbrush", size: 20))
+                                .foregroundColor(Color(uiColor: .systemGray6))
+                                .padding(.bottom, -6)
                             
                             
                             // currency image
@@ -101,6 +111,8 @@ struct ContentView: View {
                             .background(Color(uiColor: .systemGray6))
                             .cornerRadius(7)
                             .multilineTextAlignment(.trailing)
+                            .font(Font.custom("Hobbitonbrush", size: 10))
+                            
                     }
                 }
                 .padding()
