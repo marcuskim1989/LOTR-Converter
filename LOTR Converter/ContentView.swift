@@ -27,8 +27,7 @@ struct ContentView: View {
                     .frame(height: 200)
                 // currency exchange text
                 Text("Currency Exchange")
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
+                    .font(Font.custom("Hobbitonbrush", size: 30))
                 // currency conversion section
                 
                 HStack {
