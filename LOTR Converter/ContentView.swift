@@ -14,130 +14,131 @@ struct ContentView: View {
     
     
     var body: some View {
-        ZStack {
-            // Background image
-            Image("background")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-            VStack {
-                //Prancing pony image
-                Image("prancingpony")
+        NavigationView {
+            ZStack {
+                // Background image
+                Image("background")
                     .resizable()
-                    .scaledToFit()
-                    .frame(height: 200)
-                // currency exchange text
-                
-                
-                Text("Currency Exchange")
-                    .font(Font.custom("Hobbitonbrush", size: 40))
-                    .foregroundColor(Color(uiColor: .systemGray6))
-                    .padding(-20)
+                    .edgesIgnoringSafeArea(.all)
+                VStack {
+                    //Prancing pony image
+                    Image("prancingpony")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 200)
+                    // currency exchange text
                     
-                // currency conversion section
-                
-                HStack {
-                    // left conversion section
                     
-                    VStack {
-                        // currency
+                    Text("Currency Exchange")
+                        .font(Font.custom("Hobbitonbrush", size: 40))
+                        .foregroundColor(Color(uiColor: .systemGray6))
+                        .padding(-20)
                         
-                        HStack {
-                            //currency image
+                    // currency conversion section
+                    
+                    HStack {
+                        // left conversion section
+                        
+                        VStack {
+                            // currency
                             
-                            Image("silverpiece")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 33)
-                            
-                            
-                            
-    
-                            
-                            // currency text
-                            
-                            Text("Silver Piece")
-                                .font(Font.custom("Hobbitonbrush", size: 20))
-                                .foregroundColor(Color(uiColor: .systemGray6))
-                                .padding(.bottom, -6)
+                            HStack {
+                                //currency image
+                                
+                                Image("silverpiece")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 33)
                                 
                                 
-                            
-                            Spacer()
-                        }
-                
-                        
-                        // text field
-                        
-                        TextField("Amount", text: $leftAmount)
-                            .padding(7)
-                            .background(Color(uiColor: .systemGray6))
-                            .cornerRadius(7)
-                            .font(Font.custom("Hobbitonbrush", size: 10))
-                        
-                    }
+                                
+        
+                                
+                                // currency text
+                                
+                                Text("Silver Piece")
+                                    .font(Font.custom("Hobbitonbrush", size: 20))
+                                    .foregroundColor(Color(uiColor: .systemGray6))
+                                    .padding(.bottom, -6)
+                                    
+                                    
+                                
+                                Spacer()
+                            }
                     
-                    // equals sign
-                    
-                    Image(systemName: "equal")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                    
-                    // right conversion section
-                    
-                    VStack {
-                        // currency
-                        
-                        HStack {
-                            //currency text
                             
-                            Spacer()
+                            // text field
                             
-                            Text("Gold Piece")
-                                .font(Font.custom("Hobbitonbrush", size: 20))
-                                .foregroundColor(Color(uiColor: .systemGray6))
-                                .padding(.bottom, -6)
+                            TextField("Amount", text: $leftAmount)
+                                .padding(7)
+                                .background(Color(uiColor: .systemGray6))
+                                .cornerRadius(7)
+                                .font(Font.custom("Hobbitonbrush", size: 10))
                             
-                            
-                            // currency image
-                            
-                            Image("goldpiece")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 33)
                         }
                         
-                        TextField("Amount", text: $rightAmount)
-                            .padding(7)
-                            .background(Color(uiColor: .systemGray6))
-                            .cornerRadius(7)
-                            .multilineTextAlignment(.trailing)
-                            .font(Font.custom("Hobbitonbrush", size: 10))
+                        // equals sign
+                        
+                        Image(systemName: "equal")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                        
+                        // right conversion section
+                        
+                        VStack {
+                            // currency
                             
+                            HStack {
+                                //currency text
+                                
+                                Spacer()
+                                
+                                Text("Gold Piece")
+                                    .font(Font.custom("Hobbitonbrush", size: 20))
+                                    .foregroundColor(Color(uiColor: .systemGray6))
+                                    .padding(.bottom, -6)
+                                
+                                
+                                // currency image
+                                
+                                Image("goldpiece")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 33)
+                            }
+                            
+                            TextField("Amount", text: $rightAmount)
+                                .padding(7)
+                                .background(Color(uiColor: .systemGray6))
+                                .cornerRadius(7)
+                                .multilineTextAlignment(.trailing)
+                                .font(Font.custom("Hobbitonbrush", size: 10))
+                                
+                        }
                     }
-                }
-                .padding()
-                .background(.black.opacity(0.8))
-                
-                Spacer()
-                
-                // info button
-                HStack {
+                    .padding()
+                    .background(.black.opacity(0.8))
                     
                     Spacer()
                     
-                    Button {
-                        // display exchange info screen
-                    } label: {
-                        Image(systemName: "info.circle.fill")
+                    // info button
+                    HStack {
+                        
+                        Spacer()
+                        
+                        NavigationLink(destination: ExchangeInfo()) {
+                            Image(systemName: "info.circle.fill")
+                                .foregroundColor(Color(.systemGray6))
+                                .font(.largeTitle)
+                        }
+                        
+                        Spacer().frame(width: 30)
                     }
-                    .font(.largeTitle)
-                    .foregroundColor(.white)
                     
-                    Spacer().frame(width: 30)
                 }
-                
             }
-        }
+        }.accentColor(.black)
+            .font(Font.custom("Hobbitonbrush", size: 10))
     }
 }
 
