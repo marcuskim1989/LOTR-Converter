@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ExchangeInfo: View {
     var body: some View {
-        VStack {
+        
             ZStack{
                 
                 Image("background")
@@ -51,7 +51,6 @@ struct ExchangeInfo: View {
                     //done button
                 }
             }
-        }
     }
 }
 

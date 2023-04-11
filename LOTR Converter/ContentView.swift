@@ -138,7 +138,6 @@ struct ContentView: View {
                 }
             }
         }.accentColor(.black)
-            .font(Font.custom("Hobbitonbrush", size: 10))
     }
 }
 
