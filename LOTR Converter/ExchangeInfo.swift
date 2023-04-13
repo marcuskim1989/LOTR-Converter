@@ -39,14 +39,14 @@ struct ExchangeInfo: View {
                         .padding(.bottom, -10)
                     
                     // exchange rate {
-                   ExchangeRate(leftImage: "goldpiece", text: "1 Gold Piece = 4 Gold Pennies", rightImage: "goldpenny")
+                    ExchangeRate(leftImage: "goldpiece", text: K.Currency.ONE_GOLD_PIECE + " = " + K.Currency.FOUR_GOLD_PENNIES, rightImage: "goldpenny")
                         .padding(.bottom, -10)
                     
-                    ExchangeRate(leftImage: "goldpenny", text: "1 Gold Penny = 4 Silver Pieces", rightImage: "silverpiece")
+                    ExchangeRate(leftImage: "goldpenny", text: K.Currency.ONE_GOLD_PENNY + " = " + K.Currency.ONE_SILVER_PIECE, rightImage: "silverpiece")
                         .padding(.bottom, -10)
-                    ExchangeRate(leftImage: "silverpiece", text: "1 Silver Piece = 4 Silver Pennies", rightImage: "silverpenny")
+                    ExchangeRate(leftImage: "silverpiece", text: K.Currency.ONE_SILVER_PIECE + " = " + K.Currency.FOUR_SILVER_PENNIES, rightImage: "silverpenny")
                         .padding(.bottom, -10)
-                    ExchangeRate(leftImage: "silverpenny", text: "1 Silver Penny = 100 Copper Pennies", rightImage: "copperpenny")
+                    ExchangeRate(leftImage: "silverpenny", text: K.Currency.ONE_SILVER_PENNY + " = " + K.Currency.ONE_HUNDRED_COPPER_PENNIES, rightImage: "copperpenny")
                         .padding(.bottom, -10)
                     //done button
                 }

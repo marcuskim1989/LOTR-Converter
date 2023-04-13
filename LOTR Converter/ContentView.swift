@@ -17,12 +17,12 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 // Background image
-                Image("background")
+                Image(K.ImageNames.BACKGROUND_IMAGE)
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     //Prancing pony image
-                    Image("prancingpony")
+                    Image(K.ImageNames.PRANCING_PONY)
                         .resizable()
                         .scaledToFit()
                         .frame(height: 200)
@@ -30,7 +30,7 @@ struct ContentView: View {
                     
                     
                     Text("Currency Exchange")
-                        .font(Font.custom("Hobbitonbrush", size: 40))
+                        .font(Font.custom(K.FontNames.HOBBITON_POSTSCRIPT, size: 40))
                         .foregroundColor(Color(uiColor: .systemGray6))
                         .padding(-20)
                         
@@ -45,7 +45,7 @@ struct ContentView: View {
                             HStack {
                                 //currency image
                                 
-                                Image("silverpiece")
+                                Image(K.ImageNames.SILVER_PIECE)
                                     .resizable()
                                     .scaledToFit()
                                     .frame(height: 33)
@@ -57,7 +57,7 @@ struct ContentView: View {
                                 // currency text
                                 
                                 Text("Silver Piece")
-                                    .font(Font.custom("Hobbitonbrush", size: 20))
+                                    .font(Font.custom(K.FontNames.HOBBITON_POSTSCRIPT, size: 20))
                                     .foregroundColor(Color(uiColor: .systemGray6))
                                     .padding(.bottom, -6)
                                     
