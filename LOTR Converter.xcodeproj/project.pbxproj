@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C053DF229E8E6790085F551 /* DenominationSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C053DF129E8E6790085F551 /* DenominationSelector.swift */; };
 		2C0B578529E10DF100132E4B /* Hobbitonbrush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C0B578429E10DF100132E4B /* Hobbitonbrush.ttf */; };
 		2C0B578729E10EC000132E4B /* KudosKaps2NF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C0B578629E10EC000132E4B /* KudosKaps2NF.otf */; };
 		2C40D0A929E3CA2E002F288E /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C40D0A829E3CA2E002F288E /* ExchangeRate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C053DF129E8E6790085F551 /* DenominationSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenominationSelector.swift; sourceTree = "<group>"; };
 		2C0B578429E10DF100132E4B /* Hobbitonbrush.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Hobbitonbrush.ttf; path = "LOTR Converter/Hobbitonbrush.ttf"; sourceTree = SOURCE_ROOT; };
 		2C0B578629E10EC000132E4B /* KudosKaps2NF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = KudosKaps2NF.otf; path = ../../../../../../../../../Library/Fonts/KudosKaps2NF.otf; sourceTree = "<group>"; };
 		2C40D0A829E3CA2E002F288E /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				2C8B455A29DFD4A8007B19A1 /* LOTR-Converter-Info.plist */,
 				2CFEFD9029DE57A8001CA467 /* LOTR_ConverterApp.swift */,
 				2CFEFD9229DE57A8001CA467 /* ContentView.swift */,
+				2C053DF129E8E6790085F551 /* DenominationSelector.swift */,
 				2C8B455629DFCFBC007B19A1 /* ExchangeInfo.swift */,
 				2C40D0A829E3CA2E002F288E /* ExchangeRate.swift */,
 				2CFEFD9429DE57AB001CA467 /* Assets.xcassets */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C40D0A929E3CA2E002F288E /* ExchangeRate.swift in Sources */,
+				2C053DF229E8E6790085F551 /* DenominationSelector.swift in Sources */,
 				2CA9B86229E7908B0056950B /* K.swift in Sources */,
 				2C8B455729DFCFBC007B19A1 /* ExchangeInfo.swift in Sources */,
 				2CFEFD9329DE57A8001CA467 /* ContentView.swift in Sources */,

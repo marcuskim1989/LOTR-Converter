@@ -24,7 +24,7 @@ struct ExchangeRate: View {
                 .frame(height: 33)
             // exchange rater text
             Text(text)
-                .font(Font.custom("Hobbitonbrush", size: 20))
+                .font(Font.custom(K.FontNames.HOBBITON_POSTSCRIPT, size: 20))
             // right currency image
             Image(rightImage)
                 .resizable()
@@ -36,7 +36,7 @@ struct ExchangeRate: View {
 
 struct ExchangeRate_Previews: PreviewProvider {
     static var previews: some View {
-        ExchangeRate(leftImage: "goldpenny", text: "1 Gold Penny = 4 Silver Pieces", rightImage: "silverpiece")
+        ExchangeRate(leftImage: "", text: "", rightImage: "")
             .previewLayout(.sizeThatFits)
     }
 }

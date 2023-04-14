@@ -73,7 +73,7 @@ struct ContentView: View {
                                 .padding(7)
                                 .background(Color(uiColor: .systemGray6))
                                 .cornerRadius(7)
-                                .font(Font.custom("Hobbitonbrush", size: 10))
+                                .font(Font.custom(K.FontNames.HOBBITON_POSTSCRIPT, size: 10))
                             
                         }
                         
@@ -94,14 +94,14 @@ struct ContentView: View {
                                 Spacer()
                                 
                                 Text("Gold Piece")
-                                    .font(Font.custom("Hobbitonbrush", size: 20))
+                                    .font(Font.custom(K.FontNames.HOBBITON_POSTSCRIPT, size: 20))
                                     .foregroundColor(Color(uiColor: .systemGray6))
                                     .padding(.bottom, -6)
                                 
                                 
                                 // currency image
                                 
-                                Image("goldpiece")
+                                Image(K.ImageNames.GOLD_PIECE)
                                     .resizable()
                                     .scaledToFit()
                                     .frame(height: 33)
@@ -112,7 +112,7 @@ struct ContentView: View {
                                 .background(Color(uiColor: .systemGray6))
                                 .cornerRadius(7)
                                 .multilineTextAlignment(.trailing)
-                                .font(Font.custom("Hobbitonbrush", size: 10))
+                                .font(Font.custom(K.FontNames.HOBBITON_POSTSCRIPT, size: 10))
                                 
                         }
                     }
@@ -127,7 +127,7 @@ struct ContentView: View {
                         Spacer()
                         
                         NavigationLink(destination: ExchangeInfo()) {
-                            Image(systemName: "info.circle.fill")
+                            Image(systemName: K.ImageNames.INFO_BUTTON)
                                 .foregroundColor(Color(.systemGray6))
                                 .font(.largeTitle)
                         }
