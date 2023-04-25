@@ -37,6 +37,7 @@ struct ExchangeInfo: View {
                         .padding(.trailing)
                         .padding(.top, -90)
                         .padding(.bottom, -10)
+                        .multilineTextAlignment(.center)
                     
                     // exchange rate {
                     VStack {
